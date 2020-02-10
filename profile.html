@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style_profile.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="./mypage.html">
+        <div class="profile">
+            <div class="top-section">
+
+                <div class="photo">
+                    <img id="output-img"  class="profile_pic" src="./images/men.png" alt="Add Image">
+                    <input type="file" name="prod-img"  id="" accept="image/*" onchange="loadFile(event)">
+                </div>
+    
+                <div class="personal-info">
+                    <div class="entry">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Sumedh Anantrao Kularni">
+                    </div>
+                    <div class="entry">
+                        <label for="div">Div</label>
+                        <input type="text" name="div" placeholder="C">
+                    </div>
+                    <div class="entry">
+                        <label for="year">Year</label>
+                        <input type="text" name="year" placeholder="Third Year">
+                    </div>
+                    <div class="entry">
+                        <label for="semester">Semester</label>
+                        <input type="text" name="semester" placeholder="VI">
+                    </div>
+                    <div class="entry">
+                        <label for="grno">Gr No</label>
+                        <input type="text" name="grno" placeholder="17U150">
+                    </div>
+                </div>
+            </div>
+
+            <div class="course_table">
+                <h2> Courses</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Title</th>
+                            <th>Course Type</th>
+                            <th>Total</th>
+                            <th>Credits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Operating System</td>
+                            <td>TH</td>
+                            <td>100</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Artificial Intelligene</td>
+                            <td>TH</td>
+                            <td>100</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Lab Practice-IV</td>
+                            <td>TH</td>
+                            <td>100</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>User Interface Technology</td>
+                            <td>TH</td>
+                            <td>100</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Data Science</td>
+                            <td>TH</td>
+                            <td>100</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                        
+                </table>                
+            </div>
+
+            <button type="submit"> Logout </button>
+        </div>
+
+    </form>
+
+    <script>
+        var loadFile = function(event) {
+            var output = document.getElementById('output-img');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.style.height = "400px";
+            output.style.width = "auto";
+            output.style.opacity = "0.9";
+            document.getElementsByClassName("img-container")[0].style.backgroundColor = "rgba(0,0,0,0.2)";
+        };
+    </script>
+</body>
+</html>

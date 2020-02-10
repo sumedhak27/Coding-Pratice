@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 600px;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+    padding : 20px;
+
+}
+
+.top-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    max-width: 50%;
+}
+.photo img {
+    max-width: auto;
+    max-height: 200px;
+    padding : 10px;
+}
+
+.entry {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.personal-info {
+    width: 50%;
+}
+table{
+    border : 1px solid black;
+    width: 100%;
+}
+/* thead {
+
+} */
+
+.entry input {
+    margin: 10px 0;
+    width: 70%;
+    padding: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.219);
+    border: none;
+    float: right;
+}
+
+.entry label {
+    margin-top: 15px;
+    width: 30%;
+} 
+
+button{
+    padding: 0.8em 1em;
+    width: 50%;
+    margin: 10px 0;
+    background-color: rgba(82, 82, 224, 0.781);
+    border: none;
+    color : white;
+}
+
+button:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+}
